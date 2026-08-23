@@ -21,3 +21,4 @@ class rag_generator:
         pass
     def answer_question(self):
         pass
+    
