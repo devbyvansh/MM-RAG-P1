@@ -1,3 +1,13 @@
+import sys
+import os
+from pathlib import Path
+from dotenv import load_dotenv
+from langchain_openrouter import ChatOpenRouter
+project_root=Path(__file__).resolve().parent.parent
+if str(project_root) not in sys.path:
+    sys.path.insert(0,str(project_root))
+load_dotenv(dotenv_path=project_root/'.env')
+
 class rag_generator:
     def __init__(self):
         pass
